@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.OffreGestionController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="1211.0" style="-fx-background-color: #DFF3FB;" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@../../../../Smaher%20java/Fakher/Pidevjava/src/edu/esprit/gui/ajoutersalle.css" />
+         </stylesheets>
+         <children>
+            <Label layoutX="14.0" layoutY="16.0" text="Gestion des Offres" textFill="#2c2c2c">
+               <font>
+                  <Font name="Arial Bold Italic" size="31.0" />
+               </font>
+            </Label>
+            <Pane layoutX="126.0" layoutY="109.0" prefHeight="387.0" prefWidth="574.0">
+               <children>
+                  <TableView fx:id="tableview" layoutX="-109.0" layoutY="10.0" prefHeight="387.0" prefWidth="1128.0">
+                    <columns>
+                      <TableColumn fx:id="categorie_emploi_id" prefWidth="137.59998321533203" text="categorie_emploi_id" />
+                      <TableColumn fx:id="description" prefWidth="108.79998779296875" text="description" />
+                        <TableColumn fx:id="type" prefWidth="88.0" text="type" />
+                        <TableColumn fx:id="profil_souhaite" prefWidth="89.60003662109375" text="profil_souhaite" />
+                        <TableColumn fx:id="position" prefWidth="75.19998168945312" text="position" />
+                        <TableColumn fx:id="date_exp" prefWidth="90.4000244140625" text="date_exp" />
+                        <TableColumn fx:id="updated_at" prefWidth="87.20001220703125" text="updated_at" />
+                        <TableColumn fx:id="fonctionnalites" prefWidth="112.79998779296875" text="fonctionnalites" />
+                        <TableColumn fx:id="entreprise" prefWidth="115.2000732421875" text="entreprise" />
+                        <TableColumn fx:id="Latitude" prefWidth="98.0" text="Latitude" />
+                        <TableColumn fx:id="longitude" prefWidth="120.0" text="longitude" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Button fx:id="supp" layoutX="581.0" layoutY="511.0" mnemonicParsing="false" onAction="#supp" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: #4169E1;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="modif" layoutX="153.0" layoutY="511.0" mnemonicParsing="false" onAction="#Modif" prefHeight="28.0" prefWidth="133.0" style="-fx-background-color: #4169E1;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Ajouter" layoutX="354.0" layoutY="511.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: #4169E1;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="imgpathttt" layoutX="533.0" layoutY="515.0" text="Label" visible="false" />
+            <Label fx:id="labelid" layoutX="761.0" layoutY="37.0" text="Label" visible="false" />
+            <TextField fx:id="inputRech" layoutX="109.0" layoutY="71.0" prefHeight="39.0" prefWidth="211.0" />
+            <Hyperlink fx:id="gcategorie" layoutX="746.0" layoutY="32.0" onAction="#gcategorie" text="Gestion des catégories " textFill="#1a1919">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="Retour" layoutX="746.0" layoutY="54.0" onAction="#Retour" prefHeight="28.0" prefWidth="48.0" text="&lt;--" textFill="#1a1919">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="23.0" layoutY="82.0" prefHeight="17.0" prefWidth="95.0" text="Recherche ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

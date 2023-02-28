@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherOffreFrontController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="622.0" prefWidth="1152.0" style="-fx-background-color: #DFF3FB;" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@../../../../Smaher%20java/Fakher/Pidevjava/src/edu/esprit/gui/ajoutersalle.css" />
+         </stylesheets>
+         <children>
+            <Label layoutX="391.0" layoutY="14.0" text="Offre" textFill="#9c3832">
+               <font>
+                  <Font name="Arial Unicode MS" size="31.0" />
+               </font>
+            </Label>
+            <Pane layoutX="122.0" layoutY="118.0" prefHeight="378.0" prefWidth="578.0">
+               <children>
+                  <TableView fx:id="tableview" layoutX="-109.0" layoutY="10.0" prefHeight="378.0" prefWidth="1108.0">
+                     <columns>
+                        <TableColumn fx:id="categorie_emploi_id" prefWidth="137.59998321533203" text="categorie_emploi_id" />
+                        <TableColumn fx:id="description" prefWidth="108.79998779296875" text="description" />
+                        <TableColumn fx:id="type" prefWidth="88.0" text="type" />
+                        <TableColumn fx:id="profil_souhaite" prefWidth="89.60003662109375" text="profil_souhaite" />
+                        <TableColumn fx:id="position" prefWidth="75.19998168945312" text="position" />
+                        <TableColumn fx:id="date_exp" prefWidth="90.4000244140625" text="date_exp" />
+                        <TableColumn fx:id="updated_at" prefWidth="87.20001220703125" text="updated_at" />
+                        <TableColumn fx:id="fonctionnalites" prefWidth="112.79998779296875" text="fonctionnalites" />
+                        <TableColumn fx:id="entreprise" prefWidth="115.2000732421875" text="entreprise" />
+                        <TableColumn fx:id="Latitude" prefWidth="75.0" text="Latitude" />
+                        <TableColumn fx:id="longitude" prefWidth="75.0" text="longitude" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <TextField fx:id="inputRech" layoutX="32.0" layoutY="70.0" prefHeight="39.0" prefWidth="211.0" />
+            <Hyperlink fx:id="Retour" layoutX="26.0" layoutY="34.0" onAction="#Retour" text="Retour">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="gotodetail" layoutX="511.0" layoutY="546.0" mnemonicParsing="false" onAction="#gotodetail" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: #ff4500;" text="Afficher" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
